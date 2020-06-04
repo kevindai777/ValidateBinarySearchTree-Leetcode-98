@@ -9,7 +9,7 @@ class Node {
 }
   
 class Tree {
-    constructor(root, size) {
+    constructor(root) {
       this.root = null
     }
   
