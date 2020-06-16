@@ -55,6 +55,7 @@ function inorder(node) {
     if (previousNode !== null && previousNode.val >= node.val) {
         result = false
     }
+    previousNode = node
 
     if (node.right) {
         inorder(node.right)
