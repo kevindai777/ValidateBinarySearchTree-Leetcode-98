@@ -52,6 +52,7 @@ function inorder(node) {
         inorder(node.left)
     }
 
+    //Here, we check if the previousnode's value is greater than the current's
     if (previousNode !== null && previousNode.val >= node.val) {
         result = false
     }
