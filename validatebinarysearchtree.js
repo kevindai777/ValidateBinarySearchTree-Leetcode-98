@@ -1,4 +1,4 @@
-//Objective is to validate whether a tree is a proper binary search tree
+//Objective is to validate whether a tree is a valid binary search tree.
 
 class Node {
     constructor(left, right, val) {
@@ -40,7 +40,7 @@ tree.addLeftNode(tree.root.left.left.left, 560)
 tree.addRightNode(tree.root.right.right.right, 810)
 
 
-//O(n) solution that does a simple inorder search through the tree
+//O(n) solution that does a simple inorder traversal through the tree
 //If a previously found node has a greater value than the current,
 //it is an improper binary search tree
 
@@ -62,5 +62,6 @@ function inorder(node) {
         inorder(node.right)
     }
 }
+inorder(tree.root)
 
 return result
